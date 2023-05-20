@@ -23,18 +23,18 @@
 }
 
 	    @media screen and (min-width: 601px) {
-  
+
   #slided1{
     display:none;
   }
-  
+
 }
 	</style>
   </head>
   <body ondblclick="scrolling()" contenteditable="false">
     @include('include.header')
 
-	
+
 
 <!-- Hero Section Begin -->
 <section class="hero" id="searchshow" style="z-index: 1">
@@ -46,7 +46,7 @@
 						<i class="oi oi-menu"></i>
 						<span>BOOKS</span>
 						<ul style="padding: 5px;">
-							<?php 
+							<?php
 use App\books;
 $books = books::take(5)->orderBy('id','desc')->get();
 							?>
@@ -54,14 +54,14 @@ $books = books::take(5)->orderBy('id','desc')->get();
 						<li class="ftco-animate"><a href="/Bookname/{{$item->title}}">{{str_replace("_", " ", $item->title)}}</a></li>
 						<hr>
 							@endforeach
-						 
+
 					 </ul>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="col-lg-9">
-		
+
 				<section class="home-slider owl-carousel" id="slided">
 				 <div class="slider-item" style="background-image:url(images/bg_11.jpg);border-image-repeat: none">
 				   <div class="overlay"></div>
@@ -76,7 +76,7 @@ $books = books::take(5)->orderBy('id','desc')->get();
 				   </div>
 				   </div>
 				 </div>
-		   
+
 				 <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
 				   <div class="overlay"></div>
 				   <div class="container">
@@ -90,8 +90,8 @@ $books = books::take(5)->orderBy('id','desc')->get();
 				   </div>
 				   </div>
 			   </div>
-			   
-		   
+
+
 				 <div class="slider-item" style="background-image:url(images/bg_3.jpg);border-image-repeat: none">
 			   <div class="overlay"></div>
 			   <div class="container">
@@ -132,9 +132,9 @@ $books = books::take(5)->orderBy('id','desc')->get();
 			   </div>
 			   </div>
 			   </div>>
-		   
+
 			 </div>
-		   
+
 			 <div class="slider-item" style="background-image:url(images/bg_6.jpg);border-image-repeat: none">
 			   <div class="overlay"></div>
 			   <div class="container">
@@ -160,8 +160,8 @@ $books = books::take(5)->orderBy('id','desc')->get();
 
 
 
-    
-		
+
+
 		<section class="ftco-section ftco-no-pt ftc-no-pb">
 			<div class="container-fluid">
 				<div class="row d-flex">
@@ -169,7 +169,7 @@ $books = books::take(5)->orderBy('id','desc')->get();
 						<section class="ftco-services ftco-no-pb" >
 							<div class="container-wrap">
 								<div class="row no-gutters">
-				
+
 					<div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
 						<div class="media block-6 d-block text-center">
 						  <div class="icon d-flex justify-content-center align-items-center">
@@ -181,12 +181,12 @@ $books = books::take(5)->orderBy('id','desc')->get();
 							<p>Come let clear our doubt, ask your questions let solve them together as one family.</p>
 						</a>
 						  </div>
-						</div>      
+						</div>
 					  </div>
-					
-				
-				
-				
+
+
+
+
 					<div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
 						<div class="media block-6 d-block text-center">
 						  <div class="icon d-flex justify-content-center align-items-center">
@@ -198,13 +198,13 @@ $books = books::take(5)->orderBy('id','desc')->get();
 							<p>Courses here are selected carefully to teach you from no idea to advance. grab your cup of java, relax and follow.</p>
 						</a>
 						  </div>
-						</div>    
+						</div>
 					  </div>
-				
-						 
-						
-						 
-						
+
+
+
+
+
 							<div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
 								<div class="media block-6 d-block text-center">
 								  <div class="icon d-flex justify-content-center align-items-center">
@@ -216,10 +216,10 @@ $books = books::take(5)->orderBy('id','desc')->get();
 									<p>Time for fun, online games and quizzes to cheer you up. About 27 interesting and educative games available for you. Quizzes on all the courses</p>
 								</a>
 								  </div>
-								</div>      
+								</div>
 							  </div>
-						
-						  
+
+
 							<div class="col-md-6 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
 								<div class="media block-6 d-block text-center">
 								  <div class="icon d-flex justify-content-center align-items-center">
@@ -231,26 +231,26 @@ $books = books::take(5)->orderBy('id','desc')->get();
 									<p>We have online library to offer you all the learning materials you may need to complete your courses.</p>
 								</a>
 								  </div>
-								</div>      
+								</div>
 							  </div>
-						
+
 						</div>
 							</div>
 						</section>
 					</div>
 					<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
-          	
+
 				<a href="Offer" class="ftco-animate">
 					<h2 class="mb-4">What We Offer</h2>
-					
-				</a>		
-		
+
+				</a>
+
 						<div class="row mt-5">
 							<div class="col-lg-6 ftco-animate">
 								<div class="services-2 d-flex">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-security"></span></div>
 									<div  class="text pl-3">
-										
+
 										<a  href="../../#Career-Guidance">
 											<h3>Safety First</h3>
 											<p>We have career guidance board here to assist you on your decisions.</p>
@@ -262,18 +262,18 @@ $books = books::take(5)->orderBy('id','desc')->get();
 								<div class="services-2 d-flex">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-reading"></span></div>
 									<div class="text pl-3">
-										<a href="#"> 
+										<a href="#">
 
 											<h3>Regular Update Classes</h3>
 											<p>The courses here put you on track with version control to keep you up to date.</p>
 										</a>
-										
+
 									</div>
 								</div>
 							</div>
 							<a href="">
 							<div class="col-lg-6 ftco-animate" >
-							
+
 								<div class="services-2 d-flex">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-diploma"></span></div>
 									<div class="text pl-3">
@@ -281,7 +281,7 @@ $books = books::take(5)->orderBy('id','desc')->get();
 											<h3>Certified Teachers</h3>
 											<p>All the teacher here are tested carefully in order to provide good and quality information on what you choose to study.</p>
 										</a>
-									
+
 									</div>
 								</div>
 							</div>
@@ -295,11 +295,11 @@ $books = books::take(5)->orderBy('id','desc')->get();
 											<h3>Live Courses</h3>
 											<p>There are live course for student who will want to ask questions.</p>
 										</a>
-										
+
 									</div>
 								</div>
 							</a>
-						
+
 							</div>
 							<div class="col-lg-6 ftco-animate">
 								<div class="services-2 d-flex">
@@ -309,7 +309,7 @@ $books = books::take(5)->orderBy('id','desc')->get();
 											<h3>Creative Lessons</h3>
 											<p>We provide a conducive environment to test and access your skills.</p>
 										</a>
-										
+
 									</div>
 								</div>
 							</div>
@@ -321,7 +321,7 @@ $books = books::take(5)->orderBy('id','desc')->get();
 											<h3>Games</h3>
 											<p>We provide you with games and learning make fun activities to make learning easy and fun.</p>
 										</a>
-										
+
 									</div>
 								</div>
 							</div>
@@ -330,7 +330,7 @@ $books = books::take(5)->orderBy('id','desc')->get();
 				</div>
 			</div>
 		</section>
-		
+
 
 		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
     	<div class="container">
@@ -349,7 +349,7 @@ $books = books::take(5)->orderBy('id','desc')->get();
             <p>TekporAcademy main goal is to provide quality and affordable services to all and sundry regardless of location or status. It started with books house and later expanded to online class room and now TekporAcademy for all. Feel free to use all the resources this site provide it is purposely made for you.</p>
             <p>TekporAcademy is maintained and managed by beautiful members of the world. Is through their donation this site still stands, So we use this opportunity to say very big thank you for your support.</p>
           </div>
-		</div>	
+		</div>
 		<?php
 use App\admin;
 use App\User;
@@ -409,7 +409,7 @@ $contingUsers =  User::orderBy('id','desc')->get();
 			<h2 class="mb-4"><span>New</span> Quizzes</h2>
             <p>These are the most recent Quizzes, </p>
           </div>
-        </div>	
+        </div>
 				<div class="row">
 
 					<?php
@@ -417,11 +417,11 @@ $contingUsers =  User::orderBy('id','desc')->get();
 					use App\quizing;
 					use Carbon\Carbon;
 					$quizing =  quizing::orderBy('id','desc')->take(4)->get();
-					
+
 					?>
 
 					@foreach ($quizing as $item)
-					<?php   
+					<?php
 					$id = $item->admin;
 					$admins = admin::where('name',$id)->get();
 					?>
@@ -430,7 +430,7 @@ $contingUsers =  User::orderBy('id','desc')->get();
 						<div class="text pt-4">
 							<p class="meta d-flex">
 								<span><i class="icon-user mr-2"></i> @foreach ($admins as $adm)
-								
+
 									{{ substr($adm->name,0,7)  }}
 								@endforeach</span>
 								<span><i class="icon-table mr-2"></i>100+</span>
@@ -442,7 +442,7 @@ $contingUsers =  User::orderBy('id','desc')->get();
 						</div>
 					</div>
 					@endforeach
-			
+
 				</div>
 			</div>
 		</section>
@@ -454,9 +454,9 @@ $contingUsers =  User::orderBy('id','desc')->get();
 			<h2 class="mb-4">Certified Teachers</h2>
             <p>These are the list of very current enrolled teachers and their social status.</p>
           </div>
-        </div>	
+        </div>
 				<div class="row">
-					<?php   
+					<?php
 					$id = $item->admin;
 					$admins =  admin::orderBy('id','desc')->take(4)->get();
 
@@ -502,7 +502,7 @@ if (isset(Auth::user()->id)) {
 <form action="/Adviser" method="post" class="appointment-form ftco-animate">
 	@csrf
 	<input type="hidden" name="user_id" value="{{Auth::user()->id}}">
-<div class="text-center text-success">{{@$_GET[message]}}</div>
+<div class="text-center text-success">{{@Auth::user()->name}}</div>
 	<?php
 }else{
 ?>
@@ -556,23 +556,23 @@ if (isset(Auth::user()->id)) {
         </div>
 				<div class="row">
 					<?php
-					
+
 					$quizingblog =  quizing::orderBy('id','desc')->take(3)->get();
-					
+
 					?>
 
 					@foreach ($quizingblog as $item)
-					<?php   
+					<?php
 					$id = $item->admin;
 					$admins = admin::where('name',$id)->get();
 					?>
-					
+
 					<div class="col-md-6 col-lg-4 ftco-animate">
 						<div class="blog-entry">
 						  <a href="../../Quizname/{{$item->title}}" class="block-20 d-flex align-items-end" style="background-image: url('{{$item->logo}}');">
 											<div class="meta-date text-center p-2">
 							  <span class="day"> {{Carbon::now('UTC')->createFromTimeStamp(strtotime($item->created_at))->diffForHumans()}}</span>
-							  
+
 							</div>
 						  </a>
 						  <div class="text bg-white p-4">
@@ -583,7 +583,7 @@ if (isset(Auth::user()->id)) {
 								<p class="ml-auto mb-0">
 								<a href="admin/{{$item->admin}}" class="mr-2">
 										 @foreach($admins as $adm)
-								
+
 										{{ substr($adm->name,0,7)  }}
 									@endforeach</a>
 									<a href="#" class="meta-chat"><span class="icon-chat"></span> 0</a>
@@ -595,15 +595,15 @@ if (isset(Auth::user()->id)) {
 
 
 					@endforeach
-	  
+
 
         </div>
 			</div>
 		</section>
 
 
-		
-			
+
+
 			<section class="ftco-section testimony-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-2">
@@ -618,14 +618,14 @@ if (isset(Auth::user()->id)) {
 
 
 				<?php
-				
+
 				$booksblog =  books::orderBy('id','desc')->take(7)->get();
-				
+
 				?>
 
 
 @foreach ($booksblog as $item)
-	
+
 <div class="item">
 	<div class="testimony-wrap d-flex">
 	<div class="user-img mr-4" style="background-image: url(/{{$item->logo}})">
@@ -643,7 +643,7 @@ if (isset(Auth::user()->id)) {
 
 @endforeach
 
-            
+
             </div>
           </div>
         </div>
@@ -653,7 +653,7 @@ if (isset(Auth::user()->id)) {
 	@include('include/footer')
 	@include('include/down')
 	<script type="text/javascript">
-	
+
           function seacher(div){
    document.getElementById('onlines').style.display='block';
  if (window.XMLHttpRequest) {
@@ -672,9 +672,9 @@ if (isset(Auth::user()->id)) {
  coun.open('Get',urled );
  coun.setRequestHeader('content-type','application/x-www-form-urlencoded');
  coun.send();
- 
+
  };
-   
+
  function showerro() {
 
 	 var show = document.getElementById('erroee');
@@ -682,5 +682,5 @@ if (isset(Auth::user()->id)) {
  }
       </script>
   </body>
-  
+
 </html>

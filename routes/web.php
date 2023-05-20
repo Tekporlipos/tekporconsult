@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\admin;
 /*
@@ -21,18 +22,18 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/fredirect', 'SocialAuthFacebookController@redirect');
-Route::get('/fcallback', 'SocialAuthFacebookController@callback');
-Route::get('/redirect', 'SocialAuthGoogleController@redirect');
-Route::get('/callback', 'SocialAuthGoogleController@callback');
-Route::get('/home', 'HomeController@indexo')->name('home');
+Route::get('/fredirect', [\App\Http\Controllers\SocialAuthFacebookController::class,'redirect']);
+Route::get('/fcallback', [\App\Http\Controllers\SocialAuthFacebookController::class,'callback']);
+Route::get('/redirect', [\App\Http\Controllers\SocialAuthGoogleController::class,'redirect']);
+Route::get('/callback', [\App\Http\Controllers\SocialAuthGoogleController::class,'callback']);
+Route::get('/home', [HomeController::class,"index0"])->name('home');
 Route::get('courseCategory', function () {
     return view('templates/courseCategory');
 });
 Route::get('Category', function () {
     return view('templates/courseCategory');
 });
-Route::get('/accounts', 'HomeController@index')->name('account');
+Route::get('/accounts', [HomeController::class,'index'])->name('account');
 Route::get('/',  function () {
     return view('templates.index');
 });
@@ -57,7 +58,7 @@ Route::get('/blog', function () {
 Route::get('/policy', function () {
     return view('templates.policy');
 });
-Route::get('/blogger_Registration','HomeController@index6')->name('blogger_Registration');
+Route::get('/blogger_Registration',[HomeController::class,"index6"])->name('blogger_Registration');
 Route::get('/about', function () {
     return view('templates/about');
 });
@@ -111,8 +112,8 @@ Route::get('/Storehymnals', function () {
     return view('templates/Storehymnals');
 });
 
-Route::get('/careerGuidance','HomeController@guidance')->name('CareerGuidance');
-Route::get('/StartChat','HomeController@StartChat')->name('StartChat');
+Route::get('/careerGuidance',[HomeController::class,"guidance"])->name('CareerGuidance');
+Route::get('/StartChat',[HomeController::class,"StartChat"])->name('StartChat');
 
 Route::get('/TertiarystoreCategory', function () {
     return view('templates/TertiarystoreCategory');
@@ -130,17 +131,17 @@ Route::get('/start/{id}',function ($id) {
 Route::get('/upload1', function () {
     return view('templates/upload1');
 });
-Route::get('/accounts_repository', 'HomeController@index1')->name('accounts_playlist');
-Route::get('/courseUpload/{id}', 'HomeController@indexcourseUpload')->name('courseUpload/{id}');
-Route::get('/accounts_channels', 'HomeController@index2')->name('accounts_channels');
-Route::get('/accounts_about', 'HomeController@index3')->name('accounts_about');
-Route::get('/accounts_subscription', 'HomeController@index4')->name('accounts_subscription');
-Route::get('/accounts_discustion', 'HomeController@index5')->name('accounts_discustion');
+Route::get('/accounts_repository', [HomeController::class,"index1"])->name('accounts_playlist');
+Route::get('/courseUpload/{id}', [HomeController::class,"indexcourseUpload"])->name('courseUpload/{id}');
+Route::get('/accounts_channels', [HomeController::class,"index2"])->name('accounts_channels');
+Route::get('/accounts_about', [HomeController::class,"index3"])->name('accounts_about');
+Route::get('/accounts_subscription', [HomeController::class,"index4"])->name('accounts_subscription');
+Route::get('/accounts_discustion', [HomeController::class,"index5"])->name('accounts_discustion');
 //quiizStart
-Route::get('/AQuizStart/{id}', 'HomeController@quze')->name('AQuizStart/{id}');
-Route::get('/flagQuestion', 'HomeController@flag')->name('/flagQuestion');
-Route::get('/listflag', 'HomeController@listflag')->name('/listflag');
-Route::get('/message', 'HomeController@message')->name('message');
+Route::get('/AQuizStart/{id}', [HomeController::class,"quze"])->name('AQuizStart/{id}');
+Route::get('/flagQuestion', [HomeController::class,"flag"])->name('/flagQuestion');
+Route::get('/listflag', [HomeController::class,"listflag"])->name('/listflag');
+Route::get('/message', [HomeController::class,"message"])->name('message');
 Route::get('Games/typingClass', function () {
     return view('templates/typingClass');
 });
@@ -287,12 +288,12 @@ Route::post('answerQuestion', function () {
 Route::get('replyanswer', function () {
     return view('forum/reply');
 });
-Route::get('addQuestion/{id}', 'HomeController@index7')->name('addQuestion/{id}');
-Route::get('Games/puzzle/Spelling_Bee', 'HomeController@SBee')->name('/Games/puzzle/Spelling_Bee');
+Route::get('addQuestion/{id}', [HomeController::class,"index7"])->name('addQuestion/{id}');
+Route::get('Games/puzzle/Spelling_Bee', [HomeController::class,"SBee"])->name('/Games/puzzle/Spelling_Bee');
 Route::post('addQuestion','forumController@addQuestion');
 Route::post('EditaddQuestion','forumController@EditaddQuestion');
-Route::get('QuestionRevew/{id}', 'HomeController@index8')->name('QuestionRevew/{id}');
-Route::get('QuestionEdit/{id}', 'HomeController@index9')->name('QuestionEdit/{id}');
+Route::get('QuestionRevew/{id}', [HomeController::class,"index8"])->name('QuestionRevew/{id}');
+Route::get('QuestionEdit/{id}', [HomeController::class,"index9"])->name('QuestionEdit/{id}');
 //courses
 Route::get('/Science_Department', function () {
     return view('templates/ScienceDepartment');
@@ -330,19 +331,19 @@ Route::get('/cookies', function () {
     return view('include/cookies');
 });
 
-Route::get('/Games/puzzle/playsound', 'HomeController@playsound1')->name('/Games/puzzle/playsound');
+Route::get('/Games/puzzle/playsound', [HomeController::class,"playsound1"])->name('/Games/puzzle/playsound');
 
 Route::get('/Games/puzzle/changelevel', function () {
     return view('include/changelevel');
 });
 
-Route::get('/Games/puzzle/{id}', 'HomeController@playsound')->name('/Games/puzzle/{id}');
+Route::get('/Games/puzzle/{id}', [HomeController::class,"playsound"])->name('/Games/puzzle/{id}');
 
 
 Route::get('/emailverifyAgain', function () {
     return view('include/requesttoken');
 });
-Route::get('/verifyemail/{id}', 'HomeController@verifyemail')->name('verifyemail/{id}');
+Route::get('/verifyemail/{id}', [HomeController::class,"verifyemail"])->name('verifyemail/{id}');
 
 
 Route::get('postDelete/{id}', 'blogger@destroy');
@@ -385,9 +386,9 @@ Route::get('reader/{id}', function ($id) {
     return view('templates/reader',compact('id','id'));
 });
 //typing
-Route::get('/typingSignin','HomeController@typingClass')->name('typingSignin');
-Route::get('/Games/puzzles','HomeController@gamesClass')->name('sGames/puzzle');
-Route::get('/typing','HomeController@typing')->name('typing');
+Route::get('/typingSignin',[HomeController::class,"typingClass"])->name('typingSignin');
+Route::get('/Games/puzzles',[HomeController::class,"gamesClass"])->name('sGames/puzzle');
+Route::get('/typing',[HomeController::class,"typing"])->name('typing');
 
 Route::get('/typingstill', function () {
     return view('games/typingClass');
@@ -430,13 +431,10 @@ Route::get('/searchimage', function () {
 });
 // move on
 
-Route::get('/Jangle', function () {
+Route::get('/jangle', function () {
     return view('/games/Jangle/Jangle');
 });
 
-Route::get('/WBHouse', function () {
-    return view('WBHouse.WBHouse');
-});
 
 Route::get('/basicLevel', function () {
     return view('/templates/basicLevel');
