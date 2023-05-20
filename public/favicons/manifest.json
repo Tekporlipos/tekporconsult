@@ -1,0 +1,24 @@
+{
+    "name": "TekporAca",
+    "short_name": "TekporAca",
+    "icons": [
+        {
+            "src": "{{ asset('favicons/favicon256x256.png') }}",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "{{ asset('favicons/favicon192x192.png') }}",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "{{ asset('favicons/favicon64x64.png') }}",
+            "sizes": "64x64",
+            "type": "image/png"
+        }   
+    ],
+    "theme_color": "#16181b",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

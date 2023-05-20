@@ -1,0 +1,419 @@
+#wallpeper{
+    background-image: url('/spellingBee/wallpeper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#frame{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 0%;
+    bottom: 0%;
+    height: 90%;
+    width: 60%;
+    border: solid 30px #292209a2;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#menu{
+    z-index: 10;
+    background-image: url('/spellingBee/menuwall.jpeg');
+    background-repeat: no-repeat;
+   background-position: center;
+   background-origin: content-box;
+   backface-visibility: visible;
+   background-blend-mode: lighten;
+    background-clip: content-box;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+#level{
+    display: none;
+    z-index: 5;
+    position: absolute;
+    background-image: url('/spellingBee/menuwall.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#stagee1{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;background-image: url('/spellingBee/menuwall.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#stage2{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;background-image: url('/spellingBee/menuwall.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#stage3{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;background-image: url('/spellingBee/menuwall.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#review{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;background-image: url('/spellingBee/menuwall.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+#cupstyle{
+    position: absolute;
+    top: 5px;
+    left: 40%;
+    right: 40%;
+    padding: 2%;
+    width: 20%;
+    height: 30%;
+    cursor: pointer;
+    
+}
+#arrowstyle{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    right: 45%;
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+}
+#homestyle{
+    position: absolute;
+    bottom: 0px;
+    width: 15%;
+    height: 15%;
+    left: 45%;
+    right: 45%;
+    cursor: pointer;
+}
+#definition{
+    width: 96%;
+    height: 15%;
+    overflow-y: auto;
+    margin-top: 10px;
+    background-color: rgba(222, 184, 135, 0.486);
+    font-family: monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: 170%;
+    color: rgba(82, 36, 5);
+    align-content: center;
+    padding: 2%;
+    cursor: pointer;
+
+}
+#question{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    background-color: rgba(222, 184, 135, 0.486);
+    font-family: cursirgba(132, 150, 129, 0.534);
+    text-align: center;
+    color: red;
+    text-transform: capitalize;
+    align-content: center;
+}
+.answer{
+    right: 15%;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: solid rgba(0, 0, 0, 0.575) 3px;
+    text-align: center;
+    margin: 10px;
+    background-color: #8887de93;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-content: center;
+    cursor: pointer;
+    text-rendering: geometricPrecision;
+    text-justify: auto;
+}
+#option{
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    width: 70%;
+    padding-top: 20px;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 13%;
+}
+#options{
+    position: absolute;
+    width: 70%;
+    padding-top: 2%;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 13%;
+}
+#navigators{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: auto;
+    background-color: rgba(96, 126, 66, 0.575);
+    text-align: center;
+    font-weight: lighter;
+    font-style: oblique;
+
+}
+.select{
+    position: relative;
+    top: 30%;
+    bottom: 40%;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    text-transform: capitalize;
+}
+#definitiona{
+    width: 96%;
+    height: auto;
+    margin-top: 10px;
+    background-color: rgba(199, 161, 112, 0.575);
+    font-family: monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    align-content: center;
+    padding: 2%;
+    color: maroon;
+}
+.correct{
+padding: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+width: 50px;
+height: 50px;
+border: solid rgba(0, 0, 0, 0.575) 2px;
+border-radius: 5px;
+background-color:  rgba(136, 135, 222, 0.575);
+font-size: x-large;
+cursor: pointer;
+color: maroon;
+
+
+}
+#optiona{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+    width: 70%;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 13%;
+    bottom: 20%;
+}
+.correctword{
+    font-weight: bolder;
+    font-family: sans-serif;
+    padding: 3px;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+.deffinition{
+    font-family: monospace;
+    font-style: inherit;
+    width: 99%;
+    background-color: rgba(187, 212, 76, 0.486);
+    font-size: 15px;
+    padding-left: 5px;
+    font-weight: bolder;
+    align-self: center;
+    align-content: center;
+}
+.selected{
+    padding: 3px;
+text-align: right;
+font: outline;
+font-weight: unset;
+font-family: Arial, Helvetica, sans-serif;
+text-transform: capitalize;
+}
+#scroll{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    overflow-y: scroll;
+}
+#bottomNav{
+    position: absolute;
+    top: 96%;
+    width: 100%;
+    height: 100%;
+}
+#navhome{
+  margin-left: 25%;
+  margin-right: 30%;
+  color: #292209a2;
+  cursor: pointer;
+}
+#arrowNav{
+    color: #292209a2;
+    cursor: pointer;
+}
+#reviewhead{
+    text-align: center;
+    font: xx-large;
+    text-transform: capitalize;
+    text-rendering: auto;
+    text-shadow: unset;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: turquoise;
+}
+#info{
+    display: none;
+    position: absolute;
+    top: 20%;
+    width: 80%;
+    height: auto;
+    padding: 2px;
+    left: 10%;
+    right: 10%;
+    border: solid wheat 2px;
+    border-radius: 5px;
+    z-index: 10;
+    font-family: monospace;
+    font-style: normal;
+    background-color: rgba(255, 187, 0, 0.171);
+}
+#times{
+    text-align: right;
+    color: red;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+strike{
+    color: rgb(190, 39, 39);
+}
+#scoreb{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: monospace;
+    font: outline;
+    color: green;
+}
+.levelNumber{
+    position: absolute;
+    right: 1%;
+    width: auto;
+    z-index: 100;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: monospace;
+
+}
+ul{
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-size: x-small;
+}
+.sound{
+    padding-left: 5px;
+    width: 20px;
+    height: 10;
+    cursor: pointer;
+}
+#notification{
+    background-color: rgba(206, 182, 77, 0.600);
+    position: absolute;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 100;
+    right: 15%;
+    height: auto;
+    color: rgb(82, 36, 5);
+    width: 70%;
+    text-align: center;
+    font-size: 0%;
+    font-weight: bolder;
+    padding-top: 0px;
+    left: 15%;
+    font-variant: normal;
+    font-style: oblique;
+    font-family: cursive;
+    
+}
+.listen{
+    text-align: center;
+}
+.detection{
+cursor: pointer;
+height: 5%;
+}
+#trygain{
+    display: none;
+    text-decoration: none;
+    position: absolute;
+    top: 25%;
+    width: 80%;
+   padding-top: 20%;
+    height: auto;
+    padding: 2px;
+    left: 10%;
+    color: red;
+    text-align: center;
+    font-size: 200%;
+    cursor: pointer;
+    right: 10%;
+    border: solid wheat 2px;
+    border-radius: 5px;
+    z-index: 10;
+    font-family: monospace;
+    font-style: normal;
+    background-color: rgba(255, 102, 0, 0.171);
+}
